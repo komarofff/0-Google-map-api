@@ -1,7 +1,7 @@
 
 <!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>-->
 <script src="./clusters.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=KEY&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMYrZZhMGlK5PKOMQRQMVffXnUJwgyatY&libraries=places"></script>
 <style>
     #map {
     height: 100%;
@@ -199,7 +199,7 @@ body {
             });
 
             if (iconImage) { //if (props.iconImage) {
-                marker.setIcon(iconImage);
+                marker.setIcon(iconImage);//props.iconImage
             }
 
             //Check content
@@ -219,7 +219,7 @@ body {
             {
                 imagePath:   'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
-       var markerCluster = new MarkerClusterer( map, gmarkers );
+      // var markerCluster = new MarkerClusterer( map, gmarkers );
 
          map.fitBounds(bounds);//fit markers on the window
     }
